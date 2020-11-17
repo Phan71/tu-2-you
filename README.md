@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/df755576-af31-42da-b320-f9239447f3d1/deploy-status)](https://app.netlify.com/sites/tu2you/deploys)
 # Snipcart + Gatsby + DatoCMS example
 
 This is a demo project to get you started with a static ecommerce site powered by [Gatsby](https://www.gatsbyjs.org/), [Snipcart](https://snipcart.com/) and [DatoCMS](https://www.datocms.com/).
