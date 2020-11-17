@@ -41,7 +41,7 @@ export default () => (
                 <div className="Product__details">
                   <div className="Product__name">
                     {product.name}
-                    <div className="Product__price">${product.price}</div>
+                    <div className="Product__price">{product.price}€</div>
                   </div>
                   <button
                     className="Product__buy Product snipcart-add-item"
@@ -49,7 +49,7 @@ export default () => (
                     data-item-price={product.price}
                     data-item-image={product.image.url}
                     data-item-name={product.name}
-                    data-item-url={`https://determined-easley-e806d0.netlify.app/`}
+                    data-item-url={`https://tu2you.netlify.app/`}
                   >
                     Add to cart
                   </button>
