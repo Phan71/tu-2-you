@@ -36,7 +36,9 @@ const Layout = ({ children, site }) => (
       </div>
       <div className="Wrap" >
         <div className="Footer">
-          Built by Romain Luu for his mommy.
+         Contact : "Tu 2 you" <br />
+         téléphone : 11 55 22 77 88 <br />
+         e-mail : abcd.der@mail.com
         </div>
       </div>
     </div>

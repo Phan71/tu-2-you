@@ -61,8 +61,8 @@ export default () => (
     `}
     render={(data) => (
       <Layout site={data.site}>
-        <h4 className="category">Entrées</h4>
-        <div className="Catalogue">
+       <h4  className="category">Entrées</h4>
+               <div className="Catalogue">
           {data.entrees.edges.map(({ node: product }) => (
             <div className="Catalogue__item" key={product.id}>
               <div>
@@ -82,7 +82,7 @@ export default () => (
                     data-item-name={product.name}
                     data-item-url={`https://tu2you.netlify.app/`}
                   >
-                    Add to cart
+                    Ajouter
                   </button>
                 </div>
               </div>
@@ -110,7 +110,7 @@ export default () => (
                     data-item-name={product.name}
                     data-item-url={`https://tu2you.netlify.app/`}
                   >
-                    Add to cart
+                    Ajouter
                   </button>
                 </div>
               </div>
@@ -138,7 +138,7 @@ export default () => (
                     data-item-name={product.name}
                     data-item-url={`https://tu2you.netlify.app/`}
                   >
-                    Add to cart
+                    Ajouter
                   </button>
                 </div>
               </div>
