@@ -1,5 +1,5 @@
 .Header {
-  background: #337499;
+  background: #3b7688;
   color: white;
   border-bottom: 3px solid white;
   box-shadow: 0 16px 0 black;
@@ -32,16 +32,18 @@
 .Header__summary {
   text-decoration: none;
   color: white;
-  text-align: center;
+  text-align: left;
   cursor: pointer;
 
   &:hover {
     text-decoration: underline;
   }
 }
-
+.Header__summary__title {
+  font-size: 2em;
+}
 .Header__summary__line {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 @keyframes noise-anim {

@@ -19,13 +19,13 @@ const Layout = ({ children, site }) => (
             </h1>
             <div className="Header__summary snipcart-summary snipcart-checkout">
               <div className="Header__summary__title">
-                🛍 MY CART 🛍
+                🛍 Mon panier 🛍
               </div>
               <div className="Header__summary__line">
-                Number of items: <span className="snipcart-total-items"></span>
+                Nombre d'articles: <span className="snipcart-total-items"></span>
               </div>
               <div className="Header__summary__line">
-                Total price: <span className="snipcart-total-price"></span>
+                Prix total: <span className="snipcart-total-price"></span>
               </div>
             </div>
           </div>
@@ -37,8 +37,8 @@ const Layout = ({ children, site }) => (
       <div className="Wrap" >
         <div className="Footer">
          Contact : "Tu 2 you" <br />
-         téléphone : 11 55 22 77 88 <br />
-         e-mail : abcd.der@mail.com
+         Téléphone : 11 55 22 77 88 <br />
+         E-mail : abcd.der@mail.com
         </div>
       </div>
     </div>
