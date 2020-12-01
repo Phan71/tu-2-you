@@ -11,8 +11,8 @@ export default () => (
           edges {
             node {
               id
-              name
-              price
+              nom
+              prix
               image {
                 url
                 sizes(maxWidth: 300, imgixParams: { fm: "jpg" }) {
@@ -22,36 +22,7 @@ export default () => (
             }
           }
         }
-        plats: allDatoCmsProductCopy1 {
-          edges {
-            node {
-              id
-              name
-              price
-              image {
-                url
-                sizes(maxWidth: 300, imgixParams: { fm: "jpg" }) {
-                  ...GatsbyDatoCmsSizes
-                }
-              }
-            }
-          }
-        }
-        desserts: allDatoCmsProductCopy2 {
-          edges {
-            node {
-              id
-              name
-              price
-              image {
-                url
-                sizes(maxWidth: 300, imgixParams: { fm: "jpg" }) {
-                  ...GatsbyDatoCmsSizes
-                }
-              }
-            }
-          }
-        }
+        
         site {
           siteMetadata {
             siteName
@@ -61,8 +32,8 @@ export default () => (
     `}
     render={(data) => (
       <Layout site={data.site}>
-       <h4  className="category">Entrées</h4>
-               <div className="Catalogue">
+        <h4 className="category">Entrées</h4>
+        <div className="Catalogue">
           {data.entrees.edges.map(({ node: product }) => (
             <div className="Catalogue__item" key={product.id}>
               <div>
@@ -71,74 +42,20 @@ export default () => (
                 </div>{" "}
                 <div className="Product__details">
                   <div className="Product__name">
-                    {product.name}
-                    <div className="Product__price">{product.price}€</div>
+                    {product.nom}
+                    <div className="Product__price">
+                    {product.prix}€
+                   </div>
                   </div>
                   <button
                     className="Product__buy Product snipcart-add-item"
                     data-item-id={product.id}
-                    data-item-price={product.price}
+                    data-item-price={product.prix}
                     data-item-image={product.image.url}
-                    data-item-name={product.name}
-                    data-item-url={`https://tu2you.netlify.app/`}
+                    data-item-name={product.nom}
+                    data-item-url={`quan-viet.netlify.app/`}
                   >
-                    Ajouter
-                  </button>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-        <p className="category">Plats</p>
-        <div className="Catalogue">
-          {data.plats.edges.map(({ node: product }) => (
-            <div className="Catalogue__item" key={product.id}>
-              <div>
-                <div className="Product__image">
-                  <Img sizes={product.image.sizes} />
-                </div>{" "}
-                <div className="Product__details">
-                  <div className="Product__name">
-                    {product.name}
-                    <div className="Product__price">{product.price}€</div>
-                  </div>
-                  <button
-                    className="Product__buy Product snipcart-add-item"
-                    data-item-id={product.id}
-                    data-item-price={product.price}
-                    data-item-image={product.image.url}
-                    data-item-name={product.name}
-                    data-item-url={`https://tu2you.netlify.app/`}
-                  >
-                    Ajouter
-                  </button>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-        <p className="category">Desserts</p>
-        <div className="Catalogue">
-          {data.desserts.edges.map(({ node: product }) => (
-            <div className="Catalogue__item" key={product.id}>
-              <div>
-                <div className="Product__image">
-                  <Img sizes={product.image.sizes} />
-                </div>{" "}
-                <div className="Product__details">
-                  <div className="Product__name">
-                    {product.name}
-                    <div className="Product__price">{product.price}€</div>
-                  </div>
-                  <button
-                    className="Product__buy Product snipcart-add-item"
-                    data-item-id={product.id}
-                    data-item-price={product.price}
-                    data-item-image={product.image.url}
-                    data-item-name={product.name}
-                    data-item-url={`https://tu2you.netlify.app/`}
-                  >
-                    Ajouter
+                    Ajouter au panier
                   </button>
                 </div>
               </div>
